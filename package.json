@@ -1,0 +1,19 @@
+{
+  "name": "h1we010124-bilbasen-nodeseq",
+  "version": "1.0.0",
+  "description": "API i NodeJS, Express og Sequelize ",
+  "main": "index.js",
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Razzoy/h1WE010124-Bilbasen-NodeSeq.git"
+  },
+  "author": "Mathias Arenfeldt Olesen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Razzoy/h1WE010124-Bilbasen-NodeSeq/issues"
+  },
+  "homepage": "https://github.com/Razzoy/h1WE010124-Bilbasen-NodeSeq#readme"
+}
