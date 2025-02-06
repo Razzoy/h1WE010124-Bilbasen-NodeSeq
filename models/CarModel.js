@@ -12,7 +12,7 @@ CarModel.init(
       primaryKey: true,
     },
 
-    brand: {
+    _brand: {
       type: DataTypes.STRING,
       allowNull: false,
     },

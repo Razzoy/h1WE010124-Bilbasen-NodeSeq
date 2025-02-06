@@ -9,7 +9,7 @@ console.log(process.env);
 
 const app = express()
 const port = process.env.SERVERPORT || 5000
-
+app.use(express.urlencoded({extended: true}))
 
 //Route til root
 app.get('/', (req,res) => {
