@@ -1,9 +1,9 @@
 import sequelize from "../config/sequelizeClient.js";
 import { Model, DataTypes } from "sequelize";
 
-export class CarModel extends Model {}
+export class carModel extends Model {}
 
-CarModel.init(
+carModel.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -12,7 +12,12 @@ CarModel.init(
       primaryKey: true,
     },
 
-    _brand: {
+    brand: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+
+    model: {
       type: DataTypes.STRING,
       allowNull: false,
     },
@@ -33,7 +38,7 @@ CarModel.init(
         defaultValue: 0.00,
     },
 
-    distance: {
+    mileage: {
         type: DataTypes.INTEGER,
         allowNull: true,
     }

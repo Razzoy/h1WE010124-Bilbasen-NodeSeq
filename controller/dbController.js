@@ -1,5 +1,5 @@
 import express from 'express'
-import { CarModel } from '../models/CarModel.js'
+import { carModel } from '../models/carModel.js'
 import sequelize from '../config/sequelizeClient.js'
 
 export const dbController = express.Router()
