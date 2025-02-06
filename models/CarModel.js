@@ -12,11 +12,6 @@ carModel.init(
       primaryKey: true,
     },
 
-    brand: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
-
     model: {
       type: DataTypes.STRING,
       allowNull: false,
@@ -27,7 +22,7 @@ carModel.init(
       allowNull: false,
     },
 
-    color: {
+    category: {
         type: DataTypes.STRING,
         allowNull: true,
     },
