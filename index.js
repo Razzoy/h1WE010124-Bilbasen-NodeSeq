@@ -1,7 +1,11 @@
 import express from 'express'
 import dotenv from 'dotenv'
 import { dbController } from './controller/dbController.js';
-import { carController } from './controller/CarController.js';
+import { carController } from './controller/carController.js';
+import { categoryController } from './controller/categoryController.js';
+import { brandController } from './controller/brandController.js';
+import { userController } from './controller/userController.js';
+
 
 dotenv.config()
 console.log(process.env);
@@ -18,7 +22,7 @@ app.get('/', (req,res) => {
     res.send('Hello World')
 })
 
-app.use(dbController, carController)
+app.use(dbController, carController, userController, categoryController, brandController)
 
 //Route til 404
 app.get('*', (req,res) => {
